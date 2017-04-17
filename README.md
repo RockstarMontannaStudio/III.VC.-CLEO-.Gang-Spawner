@@ -146,7 +146,7 @@ https://www.youtube.com/watch?v=69SaisIKUIQ
 
 
 
-# Español: [III|VC - CLEO] Generador de paquetes ocultos
+# Español: [III|VC - CLEO] Generador de bandas
 Este código es para GTA Vice City y GTAIII. Hace que al presionar las teclas (mira la lista), puedes generar miembros de una banda. El código lo he probado en versión 1.0 de los juegos. Es necesario tener cleo para que funcione.
 
 **Teclas de las bandas:**
