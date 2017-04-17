@@ -1,0 +1,80 @@
+// How works this code? look: - Cómo funciona este código? mira: https://github.com/MatiasMontanna/III.VC.-CLEO-.Hidden-package-generator/blob/master/GTAVC/packageGeneratorVC.txt 
+SCRIPT_START
+{
+NOP
+LVAR_INT  player pdiaz_char pdiaz_char2 mun_pdiaz mun_pdiaz2 // Jugador y Banda de Díaz - Player and Díaz's gang
+LVAR_INT  biker_char biker_char2 mun_biker mun_biker2 // Moteros - Bikers
+LVAR_INT  pplayer_char pplayer_char2 mun_pplayer mun_pplayer2 // Banda de Tommy Vercetti - Vercetti's gang
+LVAR_FLOAT x y z
+ 
+y = 0.0
+ 
+GET_PLAYER_CHAR 0 player
+
+bandaDeDiaz:
+WAIT 0
+
+ IF IS_KEY_PRESSED VK_KEY_D
+ AND IS_KEY_PRESSED VK_KEY_1
+   PRINT_HELP_STRING "Banda de Diaz"
+   GET_PLAYER_COORDINATES 0 x y z
+   y += 2.0
+   REQUEST_MODEL CLA
+   REQUEST_MODEL CLB
+   LOAD_ALL_MODELS_NOW 
+   CREATE_CHAR 10 CLA x y z pdiaz_char
+   CREATE_CHAR 10 CLB x y z pdiaz_char2
+   GIVE_WEAPON_TO_CHAR pdiaz_char mun_pdiaz 1000
+   GIVE_WEAPON_TO_CHAR pdiaz_char2 mun_pdiaz2 1000
+   READ_INT_FROM_INI_FILE "CLEO\bandasVC.ini" "armas" "Pandillero de Diaz" mun_pdiaz
+   READ_INT_FROM_INI_FILE "CLEO\bandasVC.ini" "armas" "Pandillero de Diaz 2" mun_pdiaz2
+   MARK_CHAR_AS_NO_LONGER_NEEDED pdiaz_char
+   MARK_CHAR_AS_NO_LONGER_NEEDED pdiaz_char2
+ENDIF
+
+moteros:
+WAIT 0
+
+ IF IS_KEY_PRESSED VK_KEY_M
+ AND IS_KEY_PRESSED VK_KEY_1
+   PRINT_HELP_STRING "Banda de Moteros"
+   GET_PLAYER_COORDINATES 0 x y z
+   y += 2.0
+   REQUEST_MODEL BKA
+   REQUEST_MODEL BKB
+   LOAD_ALL_MODELS_NOW 
+   CREATE_CHAR 12 BKA x y z biker_char
+   CREATE_CHAR 12 BKB x y z biker_char2
+   GIVE_WEAPON_TO_CHAR biker_char mun_biker 1000
+   GIVE_WEAPON_TO_CHAR biker_char2 mun_biker2 1000
+   READ_INT_FROM_INI_FILE "CLEO\bandasVC.ini" "armas" "Motero" mun_biker
+   READ_INT_FROM_INI_FILE "CLEO\bandasVC.ini" "armas" "Motero 2" mun_biker2
+   MARK_CHAR_AS_NO_LONGER_NEEDED biker_char
+   MARK_CHAR_AS_NO_LONGER_NEEDED biker_char2
+ENDIF
+
+bandaDeTommy:
+WAIT 0
+
+ IF IS_KEY_PRESSED VK_KEY_T
+ AND IS_KEY_PRESSED VK_KEY_1
+   PRINT_HELP_STRING "Banda de Tommy Vercetti"
+   GET_PLAYER_COORDINATES 0 x y z
+   y += 2.0
+   REQUEST_MODEL PGA
+   REQUEST_MODEL PGB
+   LOAD_ALL_MODELS_NOW 
+   CREATE_CHAR 13 PGA x y z pplayer_char
+   CREATE_CHAR 13 PGB x y z pplayer_char2
+   GIVE_WEAPON_TO_CHAR pplayer_char mun_pplayer 1000
+   GIVE_WEAPON_TO_CHAR pplayer_char2 mun_pplayer2 1000
+   READ_INT_FROM_INI_FILE "CLEO\bandasVC.ini" "armas" "Pandillero de Tommy" mun_pplayer
+   READ_INT_FROM_INI_FILE "CLEO\bandasVC.ini" "armas" "Pandillero de Tommy 2" mun_pplayer2
+   MARK_CHAR_AS_NO_LONGER_NEEDED pplayer_char
+   MARK_CHAR_AS_NO_LONGER_NEEDED pplayer_char2
+ENDIF
+GOTO bandaDeDiaz
+
+
+}
+SCRIPT_END
