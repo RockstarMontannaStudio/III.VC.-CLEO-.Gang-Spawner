@@ -1,7 +1,7 @@
-# English: [III|VC - CLEO] Gang generator
-This code is for GTA Vice City and GTAIII. Makes if to press the keys (see the list), you can generate a gang members. The code has been tested in the version 1.0 of the games. Is needed to have cleo to make it work.
+# English: [III|VC - CLEO] Gang Spawner
+This code is for GTA Vice City and GTAIII. Makes if to press the keys (see the list), you can generate a gang members. The code has been tested in the version 1.0 of the games. Cleo is needed to have Gang Spawner working in your game.
 
-**Keys of gangs:**
+**Spawn Keys of Gangs:**
 
 | GTAIII        | GTA Vice City |
 | ------------- | ------------- |
@@ -52,12 +52,14 @@ This code is for GTA Vice City and GTAIII. Makes if to press the keys (see the l
 |                | 34 - Detonador |
 |                | 36 - Camera |
                 
-To make it work, you need cleo. Put the files gangsIII/VC.ini and gangGeneratorIIIa.cs, gangGeneratorIIIb.cs, gangGeneratorIIIc.cs,
-gangGeneratorVCa.cs, gangGeneratorVCb.cs (depends of the game) in the cleo folder. The weapons are customizable in the .ini file, by default is shotgun and uzi.
+Put the files gangsIII/VC.ini, gangGeneratorIIIa.cs, gangGeneratorIIIb.cs, gangGeneratorIIIc.cs,
+gangGeneratorVCa.cs and gangGeneratorVCb.cs (depends of the game) in the Cleo folder. The weapons are customizable in the .ini file, by default is shotgun and uzi.
 
-Due to a limit in the locals variants to define every gang in the code, you need to put gangGeneratorXx (GTAIII: a,b,c GTA Vice City: a,b).cs in the cleo folder.
+Due to a limit in the locals variants to define every gang in the code, you need to put gangGeneratorXa.cs, gangGeneratorXb.cs (and gangGeneratorXc for GTAIII) in the Cleo folder.
 
-Videos:
+X means: GTAIII or GTAVC.
+
+Gameplay Videos:
 
 GTAIII
 https://www.youtube.com/watch?v=Xo8EQIwq3tI
@@ -67,10 +69,10 @@ https://www.youtube.com/watch?v=69SaisIKUIQ
 
 
 
-# Español: [III|VC - CLEO] Generador de bandas
-Este código es para GTA Vice City y GTAIII. Hace que al presionar las teclas (mira la lista), puedes generar miembros de una banda. El código lo he probado en versión 1.0 de los juegos. Es necesario tener cleo para que funcione.
+# Español: [III|VC - CLEO] Gang Spawner
+Este código es para GTA Vice City y GTAIII. Hace que al presionar las teclas (mira la lista), puedes generar miembros de una banda. El código ha sido probado en la versión 1.0 de los juegos. Es necesario tener Cleo para que funcione.
 
-**Teclas de las bandas:**
+**Teclas Spawn de las bandas:**
 
 | GTAIII        | GTA Vice City |
 | ------------- | ------------- |
@@ -121,11 +123,13 @@ Este código es para GTA Vice City y GTAIII. Hace que al presionar las teclas (m
 |                | 34 - Detonador |
 |                | 36 - Cámara |
 
-Para que funcione, necesitas tener cleo. Coloca los archivos bandasIII/VC.ini y generadorBandasIIIa.cs, generadorBandasIIIb.cs, generadorBandasVCa.cs, generadorBandasVCb.cs (dependiendo del juego) en la carpeta cleo. Las armas son personalizables en el archivo .ini, por efecto es escopeta y uzi.
+Coloca los archivos bandasIII/VC.ini y generadorBandasIIIa.cs, generadorBandasIIIb.cs, generadorBandasVCa.cs, generadorBandasVCb.cs (dependiendo del juego) en la carpeta cleo. Las armas son personalizables en el archivo .ini, por efecto es escopeta y uzi.
 
-Debido a un limite en las variantes locales para definir a cada banda en el código, necesitas colocar generadorBandasXa.cs y generadorBandasXb.cs en la carpeta cleo.
+Debido a un limite en las variantes locales para definir a cada banda en el código, necesitas colocar generadorBandasXa.cs y generadorBandasXb.cs en la carpeta Cleo (y generadorBandasXc en GTAIII).
 
-Vídeos:
+X significa: GTAIII o GTAVC.
+
+Vídeos Gameplay:
 
 GTAIII
 https://www.youtube.com/watch?v=Xo8EQIwq3tI
