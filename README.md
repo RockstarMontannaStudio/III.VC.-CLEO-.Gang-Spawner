@@ -1,3 +1,5 @@
+![Logo](https://cdn.discordapp.com/attachments/498670800123985949/527920046257864705/Gang_Spawner_Mod_GTA3andGTAVC_Banner.png)
+
 # English: [III|VC - CLEO] Gang Spawner
 This code is for GTA Vice City and GTAIII. Makes if to press the keys (see the list), you can generate a gang members. The code has been tested in the version 1.0 of the games. Cleo is needed to have Gang Spawner working in your game.
 
