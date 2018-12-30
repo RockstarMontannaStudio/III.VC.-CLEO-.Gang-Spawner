@@ -1,17 +1,16 @@
-// How works this code? look: - Cómo funciona este código? mira: https://github.com/MatiasMontanna/III.VC.-CLEO-.Hidden-package-generator/blob/master/GTAVC/packageGeneratorVC.txt
 SCRIPT_START
 {
-NOP // código operacional, sin NOP, no funciona nada
-LVAR_INT  player yakuza_char yakuza_char2 mun_yakuza mun_yakuza2 // Jugador y Yakuzas - Player and Yakuzas
-LVAR_INT  yardie_char yardie_char2 mun_yardie mun_yardie2 // Yardies
-LVAR_INT  colombian_char colombian_char2 mun_colombian mun_colombian2 // Colombianos - Colombians
-LVAR_FLOAT x y z
+NOP
+LVAR_INT  player yakuza_char yakuza_char2 weap_yakuza weap_yakuza2 // Player and Yakuzas
+LVAR_INT  yardie_char yardie_char2 weap_yardie weap_yardie2 // Yardies
+LVAR_INT  colombian_char colombian_char2 weap_colombian weap_colombian2 // Colombians
+LVAR_FLOAT x y z // Positions
  
 y = 0.0
  
 GET_PLAYER_CHAR 0 player
 
-yakuzas:
+yakuzaGang:
 WAIT 0
 
  IF IS_KEY_PRESSED VK_KEY_Y
@@ -24,15 +23,15 @@ WAIT 0
    LOAD_ALL_MODELS_NOW 
    CREATE_CHAR 10 PED_GANG_YAKUZA_A x y z yakuza_char
    CREATE_CHAR 10 PED_GANG_YAKUZA_B x y z yakuza_char2
-   GIVE_WEAPON_TO_CHAR yakuza_char mun_yakuza 1000
-   GIVE_WEAPON_TO_CHAR yakuza_char2 mun_yakuza2 1000
-   READ_INT_FROM_INI_FILE "CLEO\bandasIII.ini" "armas" "Yakuza" mun_yakuza
-   READ_INT_FROM_INI_FILE "CLEO\bandasIII.ini" "armas" "Yakuza 2" mun_yakuza2
+   GIVE_WEAPON_TO_CHAR yakuza_char weap_yakuza 1000
+   GIVE_WEAPON_TO_CHAR yakuza_char2 weap_yakuza2 1000
+   READ_INT_FROM_INI_FILE "CLEO\GangSpawner_III.ini" "Armas" "Yakuza" weap_yakuza
+   READ_INT_FROM_INI_FILE "CLEO\GangSpawner_III.ini" "Armas" "Yakuza 2" weap_yakuza2
    MARK_CHAR_AS_NO_LONGER_NEEDED yakuza_char
    MARK_CHAR_AS_NO_LONGER_NEEDED yakuza_char2
 ENDIF
 
-yardies:
+yardiesGang:
 WAIT 0
 
  IF IS_KEY_PRESSED VK_KEY_Y
@@ -47,15 +46,15 @@ WAIT 0
    CREATE_CHAR 11 PED_GANG_YARDIE_B x y z yardie_char2
    MARK_CHAR_AS_NO_LONGER_NEEDED yardie_char
    MARK_CHAR_AS_NO_LONGER_NEEDED yardie_char2
-   GIVE_WEAPON_TO_CHAR yardie_char mun_yardie 1000
-   GIVE_WEAPON_TO_CHAR yardie_char2 mun_yardie2 1000
-   READ_INT_FROM_INI_FILE "CLEO\bandasIII.ini" "armas" "Yardie" mun_yardie
-   READ_INT_FROM_INI_FILE "CLEO\bandasIII.ini" "armas" "Yardie 2" mun_yardie2
+   GIVE_WEAPON_TO_CHAR yardie_char weap_yardie 1000
+   GIVE_WEAPON_TO_CHAR yardie_char2 weap_yardie2 1000
+   READ_INT_FROM_INI_FILE "CLEO\GangSpawner_III.ini" "Armas" "Yardie" weap_yardie
+   READ_INT_FROM_INI_FILE "CLEO\GangSpawner_III.ini" "Armas" "Yardie 2" weap_yardie2
    MARK_CHAR_AS_NO_LONGER_NEEDED yardie_char
    MARK_CHAR_AS_NO_LONGER_NEEDED yardie_char2
 ENDIF
 
-colombianos:
+colombianGang:
 WAIT 0
 
  IF IS_KEY_PRESSED VK_KEY_C
@@ -70,14 +69,14 @@ WAIT 0
    CREATE_CHAR 12 PED_GANG_COLOMBIAN_B x y z colombian_char2
    MARK_CHAR_AS_NO_LONGER_NEEDED colombian_char
    MARK_CHAR_AS_NO_LONGER_NEEDED colombian_char2
-   GIVE_WEAPON_TO_CHAR colombian_char mun_colombian 1000
-   GIVE_WEAPON_TO_CHAR colombian_char2 mun_colombian2 1000
-   READ_INT_FROM_INI_FILE "CLEO\bandasIII.ini" "armas" "Colombiano" mun_colombian
-   READ_INT_FROM_INI_FILE "CLEO\bandasIII.ini" "armas" "Colombiano 2" mun_colombian2
+   GIVE_WEAPON_TO_CHAR colombian_char weap_colombian 1000
+   GIVE_WEAPON_TO_CHAR colombian_char2 weap_colombian2 1000
+   READ_INT_FROM_INI_FILE "CLEO\GangSpawner_III.ini" "Armas" "Colombiano" weap_colombian
+   READ_INT_FROM_INI_FILE "CLEO\GangSpawner_III.ini" "Armas" "Colombiano 2" weap_colombian2
    MARK_CHAR_AS_NO_LONGER_NEEDED colombian_char
    MARK_CHAR_AS_NO_LONGER_NEEDED colombian_char2
 ENDIF
-GOTO yakuzas
+GOTO yakuzaGang
 
 
 }
