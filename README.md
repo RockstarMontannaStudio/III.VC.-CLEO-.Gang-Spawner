@@ -8,6 +8,13 @@ For **more information** about how to use this modification, **see the [wiki](ht
 Need help? **Contact us** in our Rockstar Montanna Studio Discord's server at:
 https://discord.gg/T8fdnKy
 
+**Download** in **Releases** section:
+https://github.com/RockstarMontannaStudio/III.VC.-CLEO-.Gang-Spawner/releases
+
+For **GTA III**: *Gang_Spawner_III_1.0.zip*
+
+For **GTA Vice City**: *Gang_Spawner_VC_1.0.zip*
+
 # Español: [III|VC - CLEO] Gang Spawner
 Este código es para GTA III y GTA Vice City. Hace que al presionar las teclas (mira la lista), puedes generar miembros de una banda. El código ha sido probado en la versión 1.0 de los juegos. Es necesario tener CLEO para que funcione.
 
@@ -15,3 +22,10 @@ Para **más información** sobre cómo usar esta modificación, **mira la [wiki]
 
 ¿Necesitas ayuda? **Contáctanos** en nuestro servidor Discord de Rockstar Montanna Studio en:
 https://discord.gg/T8fdnKy
+
+**Descarga** en la sección **Releases**:
+https://github.com/RockstarMontannaStudio/III.VC.-CLEO-.Gang-Spawner/releases
+
+Para **GTA III**: *Gang_Spawner_III_1.0.zip*
+
+Para **GTA Vice City**: *Gang_Spawner_VC_1.0.zip*
