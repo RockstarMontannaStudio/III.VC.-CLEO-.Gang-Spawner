@@ -1,5 +1,7 @@
 ![Logo](https://cdn.discordapp.com/attachments/498670800123985949/529398336713916417/Gang_Spawner_Mod_III.VC_Banner.png)
-![contribute](https://img.shields.io/github/forks/RockstarMontannaStudio/III.VC.-CLEO-.Gang-Spawner.svg?label=Contribute%20with%20us%21&style=social)
+<a href="https://github.com/RockstarMontannaStudio/III.VC.-CLEO-.Gang-Spawner/fork">
+        <img src="https://img.shields.io/github/forks/RockstarMontannaStudio/III.VC.-CLEO-.Gang-Spawner.svg?label=Contribute%20with%20us%21&style=social"
+            alt="Contribute with us!"></a>
 <a href="https://discord.gg/T8fdnKy">
         <img src="https://img.shields.io/discord/323291999778111488.svg?logo=discord"
             alt="Contact us on Discord!"></a>
